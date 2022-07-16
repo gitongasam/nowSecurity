@@ -29,8 +29,8 @@ public class UserController {
         userRepository.save(user);
         return "register_success";
     }
-    @GetMapping("/products")
+    @GetMapping("/tenant")
     public String products(Model model){
-        return "products";
+        return "tenant";
     }
 }
